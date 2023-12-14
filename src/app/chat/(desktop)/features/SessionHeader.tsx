@@ -1,4 +1,4 @@
-import { ActionIcon, Logo } from '@lobehub/ui';
+import { ActionIcon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { MessageSquarePlus } from 'lucide-react';
 import { memo } from 'react';
@@ -15,8 +15,8 @@ export const useStyles = createStyles(({ css, token }) => ({
     fill: ${token.colorText};
   `,
   top: css`
-    position: sticky;
-    top: 0;
+    font-size: 18px;
+    font-weight: bolder;
   `,
 }));
 
@@ -28,7 +28,7 @@ const Header = memo(() => {
   return (
     <Flexbox className={styles.top} gap={16} padding={16}>
       <Flexbox distribution={'space-between'} horizontal>
-        <Logo className={styles.logo} size={36} type={'text'} />
+        <div className={styles.logo}>匠心AI</div>
         <ActionIcon
           icon={MessageSquarePlus}
           onClick={() => createSession()}

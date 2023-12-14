@@ -37,7 +37,7 @@ declare global {
 export const getClientConfig = () => ({
   AGENTS_INDEX_URL: !!process.env.AGENTS_INDEX_URL
     ? process.env.AGENTS_INDEX_URL
-    : 'https://chat-agents.lobehub.com',
+    : 'https://chat-agents.ericsky.com',
   PLUGINS_INDEX_URL: !!process.env.PLUGINS_INDEX_URL
     ? process.env.PLUGINS_INDEX_URL
     : 'https://chat-plugins.lobehub.com',

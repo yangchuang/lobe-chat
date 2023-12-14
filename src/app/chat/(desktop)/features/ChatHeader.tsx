@@ -15,7 +15,6 @@ import { pathString } from '@/utils/url';
 
 import PluginTag from '../../features/ChatHeader/PluginTag';
 import SettingButton from '../../features/ChatHeader/SettingButton';
-import ShareButton from '../../features/ChatHeader/ShareButton';
 
 const Header = memo(() => {
   const init = useSessionChatInit();
@@ -83,7 +82,6 @@ const Header = memo(() => {
       }
       right={
         <>
-          <ShareButton />
           <ActionIcon
             icon={showAgentSettings ? PanelRightClose : PanelRightOpen}
             onClick={() => toggleConfig()}
