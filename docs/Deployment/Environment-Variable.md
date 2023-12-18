@@ -1,4 +1,4 @@
-# LobeChat Environment Variables
+# Environment Variables
 
 LobeChat provides additional configuration options during deployment, which can be set using environment variables
 
@@ -27,9 +27,9 @@ LobeChat provides additional configuration options during deployment, which can 
 ### `ACCESS_CODE`
 
 - Type: Optional
-- Description: Add a password to access the LobeChat service, ; you can set a long password to avoid leaking.
+- Description: Add a password to access the LobeChat service, ; you can set a long password to avoid leaking. If this value contains a comma, it is a password array.
 - Default: `-`
-- Example: `awCTe)re_r74` or `rtrt_ewee3@09!`
+- Example: `awCTe)re_r74` or `rtrt_ewee3@09!` or `code1,code2,code3`
 
 ### `NEXT_PUBLIC_CUSTOM_MODELS`
 
