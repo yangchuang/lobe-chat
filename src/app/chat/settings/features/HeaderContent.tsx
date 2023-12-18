@@ -40,7 +40,6 @@ export const HeaderContent = memo<{ mobile?: boolean }>(() => {
   );
 
   return (
-    <>
       <Dropdown arrow={false} menu={{ items }} trigger={['click']}>
         <ActionIcon
           icon={HardDriveDownload}
@@ -48,7 +47,6 @@ export const HeaderContent = memo<{ mobile?: boolean }>(() => {
           title={t('export', { ns: 'common' })}
         />
       </Dropdown>
-    </>
   );
 });
 
